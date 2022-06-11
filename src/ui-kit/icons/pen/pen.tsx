@@ -2,9 +2,10 @@ import React, { FC } from 'react';
 import { IPenIconProps } from "@ui-kit/icons/pen/types";
 
 
-const PenIcon: FC<IPenIconProps> = ({ height, width }): JSX.Element => {
+const PenIcon: FC<IPenIconProps> = ({ height, width, color }): JSX.Element => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 61.49" height={height || 15} width={width || 15}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 61.49" height={height || 15} width={width || 15}
+         fill={color || '#000000'}>
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path className="cls-1"

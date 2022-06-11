@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import PageWrapper from "../../ui-kit/components/page-wrapper/page-wrapper";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import MicrophoneIcon from "../../ui-kit/icons/microphone/microphone";
+import PenIcon from "../../ui-kit/icons/pen/pen";
 import { bookByIdQuery } from "../../queries/catalog/catalog";
 
 import { BookAuthor, BookHeader, BookInfo, BookThumbnail, BookTitle, ThumbnailWrapper } from "./styled";
@@ -35,7 +35,7 @@ const BookPage: FC = (): JSX.Element => {
             {book.name}
           </BookTitle>
           <BookAuthor>
-            <MicrophoneIcon color="#FFFFFF"/> {book.author}
+            <PenIcon color="#FFFFFF"/> {book.author}
           </BookAuthor>
         </BookInfo>
       </BookHeader>
